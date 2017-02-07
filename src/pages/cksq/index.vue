@@ -2,9 +2,7 @@
     <div class="page">
         <!-- 创客社区banner -->
         <div class="container-fluid cksq-banner-bg">
-            <div class="container-fluid-content">
-              <img src="../../assets/img/ckzj_banner.png" alt="">
-            </div>
+          <img src="../../assets/img/cksq-banner.png" alt="">
         </div>
         <!-- 路演大厅 -->
         <div class="cksq-lydt-box">
@@ -74,7 +72,10 @@
   export default {
     mounted(){
         this.$nextTick(()=>{
-          window.scrollReveal = new scrollReveal({ reset: true });
+
+          this.scrollReveal = new scrollReveal({
+              reset : true
+          });
         })
       }
   }
@@ -82,11 +83,7 @@
 
 <style scoped>
   .cksq-banner-bg{
-    background: #4ec4e2;
     height: 300px;
-  }
-  .cksq-banner-bg img{
-    width: 100%;
   }
   .cksq-lydt-box{
     background: #efece7;

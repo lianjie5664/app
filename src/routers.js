@@ -9,6 +9,7 @@ import Lydt from './pages/cksq/Lydt.vue'
 import LydtD from './pages/cksq/LydtD.vue'
 import Dksj from './pages/rzfw/Dksj.vue'
 import Cksq from './pages/cksq/index.vue'
+import Ckzj from './pages/cksq/Ckzj.vue'
 import NewsDetail from './pages/news/Detail.vue'
 import PubLy from './pages/cksq/PubLy.vue'
 // 编写路由集合
@@ -39,6 +40,11 @@ const routes = [
     name : 'Cksq',
     path : '/cksq',
     component : Cksq
+  },
+  {
+    name : 'Ckzj',
+    path : '/cksq/ckzj',
+    component : Ckzj
   },
   {
     name : 'NewsDetail',

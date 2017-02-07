@@ -5,7 +5,7 @@
             <div class="header clearfix">
                 <!-- logo -->
                 <div class="logo">
-                    <router-link to="/"><img src="../assets/img/logo.png" width="187" alt="天开金服"></router-link>
+                    <router-link to="/"><img :src="logo" width="187" alt="天开金服"></router-link>
                 </div>
                 <!-- navigation -->
                 <div class="nav">
@@ -31,6 +31,7 @@
     export default {
         data(){
           return {
+            logo : require('assets/img/logo.png'),
             menus : [
               {
                 name : '首页',
@@ -53,27 +54,27 @@
                   },
                   {
                     name : '创客之家',
-                    link : '',
+                    link : '/cksq/ckzj',
                     parent : 'cksq'
                   },
                   {
                     name : '创客学院',
-                    link : '',
+                    link : '/cksq/cksxy',
                     parent : 'cksq'
                   },
                   {
                     name : '创客沙龙',
-                    link : '/lydt',
+                    link : '/cksq/cksl',
                     parent : 'cksq'
                   },
                   {
                     name : '失信曝光',
-                    link : '',
+                    link : '/cksq/sxbg',
                     parent : 'cksq'
                   },
                   {
                     name : '征信查询',
-                    link : '',
+                    link : '/cksq/zxcx',
                     parent : 'cksq'
                   }
                 ]

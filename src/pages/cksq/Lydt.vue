@@ -70,6 +70,7 @@
   import { mapGetters } from 'vuex'
   import { mapActions } from 'vuex'
   import store from '../../vuex/index'
+  import help  from '../../utils/helper'
   export default{
     created(){
       this.$store.dispatch('LydtList',1)
@@ -84,10 +85,10 @@
         lydtList : 'LydtList',
       }),
         pageSize(){
-           return this.$store.state.lydt.onePageSize
+           return this.$store.state.cksq.onePageSize
         },
         totalCount(){
-           return this.$store.state.lydt.totalCount
+           return this.$store.state.cksq.totalCount
         }
     },
     methods:{
@@ -97,6 +98,7 @@
       handleCurrentChange(val) {
         this.currentPage = val
         this.$store.dispatch('LydtList',val)
+        help.toTop();
       }
     },
     filters : {

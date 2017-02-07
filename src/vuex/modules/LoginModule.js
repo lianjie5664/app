@@ -33,7 +33,7 @@ const mutations = {
   },
   [type.USER_SIGNOUT](state) {
     localStorage.removeItem('user');
-    state.info = null;
+    // state.info = null;
   },
   // [USER_REG](state, user) {
   //   localStorage.setItem('user',JSON.stringify(user));

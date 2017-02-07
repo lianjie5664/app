@@ -8,7 +8,7 @@ import * as actions from './actions'
 import * as getters from './getters'
 import login from './modules/LoginModule'
 import indexNews from './modules/NewsModule'
-import lydt from './modules/LydtModule'
+import cksq from './modules/CksqModule'
 
 Vue.use(Vuex);
 
@@ -20,7 +20,7 @@ export default new Vuex.Store({
   modules: {
     login,
     indexNews,
-    lydt
+    cksq
   },
   strict: debug
 })

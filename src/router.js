@@ -14,6 +14,14 @@ const router = new VueRouter({
   // base : __dirname,
   // base: '/app/', // 这个是设置根目录路径，一般用不到，默认'/'
   saveScrollPosition: true,
+  //滚动行为（这个功能只在 HTML5 history 模式下可用）
+  scrollBehavior(to,from,savedPosition){
+      if (savedPosition) {
+        return savedPosition
+      } else {
+        return { x: 0, y: 0 }
+      }
+  },
   routes // 挂载路由集合 后面会说
 })
 

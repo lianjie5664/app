@@ -56,6 +56,22 @@ export default {
     instance.get('/lydt/detail.do?id='+id).then(function (res) {
         callback && callback(res);
     })
+  },
+  //众创空间列表
+  getZckjList : function (callback) {
+    instance.get('/enterpriseSpaceController/recommend/list.do').then(function (res) {
+        callback && callback(res);
+    })
+  },
+  getCyyqList : function (callback) {
+    instance.get('/ckkj/ckzj/recommend.do').then(function (res) {
+      callback && callback(res);
+    })
+  },
+  getCkhdList : function (callback) {
+    instance.get('/enterpriseActivityController/recommend/list.do').then(function (res) {
+      callback && callback(res);
+    })
   }
 }
 

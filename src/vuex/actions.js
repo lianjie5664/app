@@ -56,3 +56,23 @@ export const LydtDetail =({commit},data) =>{
       commit(type.LYDT_DETAIL,res.data.resultData);
   })
 };
+//众创空间列表
+export const ZckjList = ({commit},data) => {
+  api.getZckjList(function (res) {
+    commit(type.CKZJ_ZCKJ_LIST,res.data);
+  })
+};
+//产业园区列表
+export const CyyqList = ({commit},data) => {
+  api.getCyyqList(function (res) {
+    commit(type.CKZJ_CYYQ_LIST,res.data);
+  })
+};
+
+//创客活动列表
+export const CkhdList = ({commit},data) => {
+  api.getCkhdList(function (res) {
+    commit(type.CKZJ_CKHD_LIST,res.data);
+  })
+};
+
